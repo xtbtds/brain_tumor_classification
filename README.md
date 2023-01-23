@@ -54,8 +54,8 @@ Dataset consists of 4 classes of images, which represent 3 types of brain tumor 
 Go to "training" directory and run the following commands:
 1. `sudo pip3 install virtualenv`
 2. `virtualenv venv`
-3. Activate virtual environment:`source venv/bin/activate`
-4. `pip3 install -r requirements.txt`
+3. Activate virtual environment: `source venv/bin/activate`
+4. Install dependencies for running training process: `pip3 install -r requirements.txt`
 5. `jupyter notebook`
 
 
