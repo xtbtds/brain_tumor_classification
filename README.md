@@ -17,7 +17,7 @@ Many different types of brain tumors exist. Some brain tumors are noncancerous (
 
 How quickly a brain tumor grows can vary greatly. The growth rate as well as the location of a brain tumor determines how it will affect the function of your nervous system.
 
-Brain tumor treatment options depend on the type of brain tumor you have, as well as its size and location.
+Application of automated classification techniques using AI has consistently shown higher accuracy than manual classification. This reposutory provides a solution to the problem.
 
 # Dataset
 
