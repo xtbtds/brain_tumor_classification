@@ -28,11 +28,11 @@ It uses trained xgboost model with 75% accuracy. You can see how it was trained 
 # Deploy to AWS
 1. Go to AWS, sign in to the console and create ubuntu EC2 instance, create and download your .PEM key 
 2. Run this steps to install docker and docker-compose to your EC2 ubuntu machine:
-  - yum update -y
-  - amazon-linux-extras install docker -y
-  - service docker start
-  - systemctl enable docker
-  - usermod -a -G docker ec2-user
-  - chmod 666 /var/run/docker.sock
-  - curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
-  - chmod +x /usr/local/bin/docker-compose
+  - `yum update -y`
+  - `amazon-linux-extras install docker -y`
+  - `service docker start`
+  - `systemctl enable docker`
+  - `usermod -a -G docker ec2-user`
+  - `chmod 666 /var/run/docker.sock`
+  - `curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose`
+  - `chmod +x /usr/local/bin/docker-compose`
