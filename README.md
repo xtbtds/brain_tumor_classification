@@ -1,5 +1,5 @@
 This is a ***FastAPI + React JS + nginx*** application for brain tumor classification. 
-It uses trained CNN model with 75% accuracy.  
+It uses trained CNN-XGBoost model with 75% accuracy.  
 
 # Table of contents
 * [Problem description](#problem-description)
