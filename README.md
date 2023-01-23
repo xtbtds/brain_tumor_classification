@@ -9,7 +9,7 @@ It uses trained xgboost model with 75% accuracy. You can see how it was trained 
 
 # Problem description
 
-# Usage:  
+# Usage 
 - `git clone https://github.com/xtbtds/brain_tumor_classification_mlzoomcamp`
 - `cd <project folder>`
 - `docker-compose up`
