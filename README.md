@@ -27,9 +27,10 @@ Dataset consists of 4 classes of images, which represent 3 types of brain tumor 
 4. Pituitary tumor
 
 <p float="left">
-  <img src="/img1.png" width="100" />
-  <img src="/img2.png" width="100" /> 
-  <img src="/img3.png" width="100" />
+  <img src="img/image(1).jpg" width="150" />
+  <img src="img/image(2).jpg" width="150" />
+  <img src="img/image(3).jpg" width="150" />
+  <img src="img/image(5).jpg" width="150" />
 </p>
 
 
