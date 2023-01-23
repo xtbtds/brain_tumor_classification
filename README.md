@@ -30,7 +30,7 @@ It uses trained xgboost model with 75% accuracy. You can see how it was trained 
 2. Give your .pem file the right permissions, otherwise it won't let you to ssh to your EC2 instance because of wrong permissions:
   - `chmod 0400 <YOUR_PEM_FILE.pem>`
 3. Connect to your EC2 instance:
-  - `ssh -i <YOUR_PEM_FILE.pem` ubuntu@<your_ec2_public_IP>
+  - `ssh -i <YOUR_PEM_FILE>.pem ubuntu@<your_ec2_public_public_IP>`
 4. Run this steps to install docker and docker-compose to your EC2 ubuntu machine:
   - `yum update -y`
   - `amazon-linux-extras install docker -y`
@@ -40,3 +40,4 @@ It uses trained xgboost model with 75% accuracy. You can see how it was trained 
   - `chmod 666 /var/run/docker.sock`
   - `curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose`
   - `chmod +x /usr/local/bin/docker-compose`
+5. Copy the content of [this  docker-compose file](https://github.com/xtbtds/brain_tumor_classification/blob/main/pulled/docker-compose.yml) to your EC2 instance manually, or using command `scp -i <YOUR_PEM_FILE>.pem -r <path_to_dockercompose_file> ubuntu@<your_ec2_public_public_IP>:/home/ubuntu`
