@@ -9,8 +9,10 @@ It uses trained xgboost model with 75% accuracy. You can see how it was trained 
 
 
 # Problem description
-A brain tumor is a mass or growth of abnormal cells in your brain.
-<img src="img/image(1).jpg" width="150" />
+A brain tumor is a mass or growth of abnormal cells in your brain.  
+
+<img src="img/descr.jpg" width="400" />  
+
 Many different types of brain tumors exist. Some brain tumors are noncancerous (benign), and some brain tumors are cancerous (malignant). Brain tumors can begin in your brain (primary brain tumors), or cancer can begin in other parts of your body and spread to your brain as secondary (metastatic) brain tumors.
 
 How quickly a brain tumor grows can vary greatly. The growth rate as well as the location of a brain tumor determines how it will affect the function of your nervous system.
