@@ -2,7 +2,7 @@ This is a ***FastAPI + React JS + nginx*** application for brain tumor classific
 It uses trained xgboost model with 75% accuracy. You can see how it was trained in [**notebook.ipynb**](https://github.com/xtbtds/brain_tumor_prediction/blob/main/backend/notebook.ipynb)  
 
 # Table of contents
-* [Problem description](problem-description)
+* [Problem description](#problem-description)
 * [Usage](#usage)
 * [Deploy to AWS](#deploy-to-aws)
 
