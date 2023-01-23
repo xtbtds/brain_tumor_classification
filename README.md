@@ -41,3 +41,5 @@ It uses trained xgboost model with 75% accuracy. You can see how it was trained 
   - `curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose`
   - `chmod +x /usr/local/bin/docker-compose`
 5. Copy the content of [this  docker-compose file](https://github.com/xtbtds/brain_tumor_classification/blob/main/pulled/docker-compose.yml) to your EC2 instance manually, or using command `scp -i <YOUR_PEM_FILE>.pem -r <path_to_dockercompose_file> ubuntu@<your_ec2_public_public_IP>:/home/ubuntu`
+6. Connect to your EC2 instance via ssh again and run `docker-compose up`
+7. Copy Public IPv4 address of your instance to the new tab, wait a little bit and you'll see this service deployed to the cloud.
