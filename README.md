@@ -3,11 +3,14 @@ It uses trained xgboost model with 75% accuracy. You can see how it was trained 
 
 # Table of contents
 * [Problem description](#problem-description)
+* [Dataset](#dataset)
 * [Usage](#usage)
 * [Deploy to AWS](#deploy-to-aws)
 
 
 # Problem description
+
+# Dataset
 
 # Usage 
 - `git clone https://github.com/xtbtds/brain_tumor_classification_mlzoomcamp`
