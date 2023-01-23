@@ -12,6 +12,20 @@ It uses trained xgboost model with 75% accuracy. You can see how it was trained 
 
 # Dataset
 
+[Link to the dataset](https://github.com/sartajbhuvaji/brain-tumor-classification-dataset)  
+Dataset consists of 4 classes of images, which represent 3 types of brain tumor and no tumor at all:
+1. Glioma tumor
+2. Meningioma tumor
+3. No tumor
+4. Pituitary tumor
+
+<p float="left">
+  <img src="/img1.png" width="100" />
+  <img src="/img2.png" width="100" /> 
+  <img src="/img3.png" width="100" />
+</p>
+
+
 # Usage 
 - `git clone https://github.com/xtbtds/brain_tumor_classification_mlzoomcamp`
 - `cd <project folder>`
