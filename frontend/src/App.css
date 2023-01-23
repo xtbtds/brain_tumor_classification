@@ -1,0 +1,29 @@
+.uploadButton {
+    text-align: center;
+    background: #6495ED;
+    display: inline-block;
+    padding: 1rem 1.25rem;
+    border-radius: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+}
+.predictions {
+    text-align: center;
+}
+
+.startPred {
+    color: #6495ED;
+}
+
+.buttons {
+    display: inline-block;
+    text-align: center;
+    margin-top: 1.3rem;
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+}
+.App {
+    text-align: center;
+}

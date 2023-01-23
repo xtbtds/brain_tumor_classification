@@ -1,0 +1,13 @@
+version: '3'
+services: 
+  fastapi:
+    image: nekosakanakaeru/brain-nginx-working-fastapi:latest
+    ports:
+      - "8080:8080"
+
+  nginx-react:
+    depends_on: 
+      - fastapi
+    image: nekosakanakaeru/brain-nginx-working-nginx-react:latest
+    ports: 
+      - "80:80"

@@ -1,0 +1,17 @@
+version: '3'
+services: 
+  fastapi:
+    build:
+      context: ./backend/
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+
+  nginx-react:
+    depends_on: 
+      - fastapi
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports: 
+      - "80:80"
