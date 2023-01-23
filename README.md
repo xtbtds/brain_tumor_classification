@@ -4,7 +4,7 @@ It uses trained xgboost model with 75% accuracy. You can see how it was trained 
 # Table of contents
 * [Problem description](#problem-description)
 * [Dataset](#dataset)
-* [Solution and usage](#solution-and-usage)
+* [Usage](#usage)
 * [Deploy to AWS](#deploy-to-aws)
 
 
@@ -36,7 +36,7 @@ Dataset consists of 4 classes of images, which represent 3 types of brain tumor 
 </p>
 
 
-# Solution and Usage 
+# Usage 
 - `git clone https://github.com/xtbtds/brain_tumor_classification_mlzoomcamp`
 - `cd <project folder>`
 - `docker-compose up`
