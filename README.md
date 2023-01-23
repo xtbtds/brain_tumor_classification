@@ -5,6 +5,7 @@ It uses trained xgboost model with 75% accuracy. You can see how it was trained 
 * [Problem description](#problem-description)
 * [Dataset](#dataset)
 * [Usage](#usage)
+* [Run notebook in the virtual environment](#run-notebook-in-the-virtual-environment)
 * [Deploy to AWS](#deploy-to-aws)
 
 
@@ -48,6 +49,15 @@ Dataset consists of 4 classes of images, which represent 3 types of brain tumor 
 ![](app-usage-gif.gif) 
 
 **Note:** you don't need to download the whole repo if you don't want to. Another way to run the app is to use [this  docker-compose file](https://github.com/xtbtds/brain_tumor_classification/blob/main/pulled/docker-compose.yml). It pulles already built images from docker hub. Copy this file to your local machine and run `docker-compose up`. 
+
+# Run notebook in the virtual environment
+Go to "training" directory and run the following commands:
+1. `sudo pip3 install virtualenv`
+2. `virtualenv venv`
+3. Activate virtual environment:`source venv/bin/activate`
+4. `pip3 install -r requirements.txt`
+5. `jupyter notebook`
+
 
 # Deploy to AWS
 1. Go to AWS, sign in to the console and create ubuntu EC2 instance, create and download your .pem file with the key 
