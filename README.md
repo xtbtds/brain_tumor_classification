@@ -2,10 +2,14 @@ This is a ***FastAPI + React JS + nginx*** application for brain tumor classific
 It uses trained xgboost model with 75% accuracy. You can see how it was trained in [**notebook.ipynb**](https://github.com/xtbtds/brain_tumor_prediction/blob/main/backend/notebook.ipynb)  
 
 # Table of contents
+* [Problem description](problem-description)
 * [Usage](#usage)
+* [Deploy to AWS](#deploy-to-aws)
 
 
-#USAGE:  
+# Problem description
+
+# Usage:  
 - `git clone https://github.com/xtbtds/brain_tumor_classification_mlzoomcamp`
 - `cd <project folder>`
 - `docker-compose up`
@@ -17,3 +21,5 @@ It uses trained xgboost model with 75% accuracy. You can see how it was trained 
 ![](app-usage-gif.gif) 
 
 **Note:** you don't need to download the whole repo if you don't want to. Another way to run the app is to use [this  docker-compose file](https://github.com/xtbtds/brain_tumor_classification/blob/main/pulled/docker-compose.yml). It pulles already built images from docker hub. Copy this file to your local machine and run `docker-compose up`. 
+
+# Deploy to AWS
