@@ -2,23 +2,11 @@ This is a ***FastAPI + React JS + nginx*** application for brain tumor classific
 It uses trained CNN-XGBoost model with 75% accuracy.  
 
 # Table of contents
-* [Problem description](#problem-description)
 * [Dataset](#dataset)
 * [Usage](#usage)
 * [Run notebook in the virtual environment](#run-notebook-in-the-virtual-environment)
 * [Deploy to AWS](#deploy-to-aws)
 
-
-# Problem description
-A brain tumor is a mass or growth of abnormal cells in your brain.  
-
-<img src="img/descr.jpg" width="400" />  
-
-Many different types of brain tumors exist. Some brain tumors are noncancerous (benign), and some brain tumors are cancerous (malignant). Brain tumors can begin in your brain (primary brain tumors), or cancer can begin in other parts of your body and spread to your brain as secondary (metastatic) brain tumors.
-
-How quickly a brain tumor grows can vary greatly. The growth rate as well as the location of a brain tumor determines how it will affect the function of your nervous system.
-
-Application of automated classification techniques using AI has consistently shown higher accuracy than manual classification. This reposutory provides a solution to the problem.
 
 # Dataset
 
