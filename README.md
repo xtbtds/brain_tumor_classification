@@ -2,7 +2,7 @@ This is a ***FastAPI + React JS + nginx*** application for brain tumor classific
 It uses trained CNN-XGBoost model with 75% accuracy.  
 
 # Usage 
-- `git clone https://github.com/xtbtds/brain_tumor_classification_mlzoomcamp`
+- `git clone https://github.com/xtbtds/brain_tumor_classification`
 - `cd <project folder>`
 - `docker-compose up`
 - wait for docker-compose to build and run images.
