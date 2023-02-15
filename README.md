@@ -18,7 +18,7 @@ It uses trained CNN-XGBoost model with 75% accuracy.
 Here is the code used for training the model and run it.  
 - Dataset: [link](https://github.com/sartajbhuvaji/brain-tumor-classification-dataset)
 - Notebook with creating and training models: [link](https://github.com/xtbtds/ml-zoomcamp/blob/main/notebook_for_capstone_project.ipynb)
-- Requirements for running the notebook: [link](https://github.com/xtbtds/brain_tumor_classification/blob/main/training/requirements.txt)
+- Requirements for running the notebook: [link](https://github.com/xtbtds/brain_tumor_classification_mlzoomcamp/blob/main/training/requirements.txt)
 
 
 # Deploy to AWS
