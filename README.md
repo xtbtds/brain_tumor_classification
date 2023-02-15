@@ -1,30 +1,6 @@
 This is a ***FastAPI + React JS + nginx*** application for brain tumor classification. 
 It uses trained CNN-XGBoost model with 75% accuracy.  
 
-# Table of contents
-* [Dataset](#dataset)
-* [Usage](#usage)
-* [Run notebook in the virtual environment](#run-notebook-in-the-virtual-environment)
-* [Deploy to AWS](#deploy-to-aws)
-
-
-# Dataset
-
-[Link to the dataset](https://github.com/sartajbhuvaji/brain-tumor-classification-dataset)  
-Dataset consists of 4 classes of images, which represent 3 types of brain tumor and no tumor at all:
-1. Glioma tumor
-2. Meningioma tumor
-3. No tumor
-4. Pituitary tumor
-
-<p float="left">
-  <img src="img/image(1).jpg" width="150" />
-  <img src="img/image(2).jpg" width="150" />
-  <img src="img/image(3).jpg" width="150" />
-  <img src="img/image(5).jpg" width="150" />
-</p>
-
-
 # Usage 
 - `git clone https://github.com/xtbtds/brain_tumor_classification_mlzoomcamp`
 - `cd <project folder>`
@@ -38,13 +14,11 @@ Dataset consists of 4 classes of images, which represent 3 types of brain tumor 
 
 **Note:** you don't need to download the whole repo if you don't want to. Another way to run the app is to use [this  docker-compose file](https://github.com/xtbtds/brain_tumor_classification/blob/main/pulled/docker-compose.yml). It pulles already built images from docker hub. Copy this file to your local machine and run `docker-compose up`. 
 
-# Run notebook in the virtual environment
-Go to [training directory](https://github.com/xtbtds/brain_tumor_classification_mlzoomcamp/tree/main/training) and run the following commands:
-1. `sudo pip3 install virtualenv`
-2. `virtualenv venv`
-3. Activate virtual environment: `source venv/bin/activate`
-4. Install dependencies for running training process: `pip3 install -r requirements.txt`
-5. `jupyter notebook`
+# Model Training
+Here is the code used for training the model and run it.  
+- Dataset: [link](https://github.com/sartajbhuvaji/brain-tumor-classification-dataset)
+- Notebook with creating and training models: [link](https://github.com/xtbtds/ml-zoomcamp/blob/main/notebook_for_capstone_project.ipynb)
+- Requirements for running the notebook: [link](https://github.com/xtbtds/brain_tumor_classification/blob/main/training/requirements.txt)
 
 
 # Deploy to AWS
