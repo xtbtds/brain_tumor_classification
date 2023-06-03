@@ -1,6 +1,8 @@
 version: '3'
 services: 
   fastapi:
+    hostname: fastapi
+    container_name: fastapi
     build:
       context: ./backend/
       dockerfile: Dockerfile
@@ -9,11 +11,24 @@ services:
     volumes:
       - ./backend:/app
 
-  nginx-react:
+  react:
+    hostname: react
+    container_name: react
     depends_on: 
       - fastapi
     build: 
       context: ./frontend
       dockerfile: Dockerfile
     ports: 
+      - "3000:3000"
+
+  nginx:
+    depends_on:
+      - fastapi
+      - react
+    build: 
+      context: ./nginx
+      dockerfile: Dockerfile
+    hostname: nginx
+    ports:
       - "80:80"

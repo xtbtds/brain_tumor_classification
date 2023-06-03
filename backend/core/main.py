@@ -6,6 +6,10 @@ from fastapi.responses import JSONResponse
 app = FastAPI()
 
 origins = [
+    "http://react",
+    "http://react:3000"
+    "http://react:81",
+    "http://react:80",
     "http://localhost",
     "http://localhost:3000",
 ]

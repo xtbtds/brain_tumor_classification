@@ -23,7 +23,7 @@ function App() {
     const formData = new FormData();
     formData.append('file', selectedImage);
     try {
-      const res = await fetch('http://0.0.0.0:8080/upload', {
+      const res = await fetch('/api/upload', {
         method: 'POST',
         body: formData
       });
