@@ -11,7 +11,7 @@ function App() {
     if (file.type.split('/')[0] === 'image') {
       setSelectedImage(file);
     } else {
-        console.log("Only images are accepted.")
+        alert("Only images are accepted.")
     }
   }
 

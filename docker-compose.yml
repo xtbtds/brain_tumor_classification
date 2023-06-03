@@ -6,6 +6,8 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
+    volumes:
+      - ./backend:/app
 
   nginx-react:
     depends_on: 

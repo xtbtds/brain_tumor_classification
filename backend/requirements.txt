@@ -2,7 +2,6 @@ fastapi
 keras
 opencv-python
 pandas
-tensorflow
 uvicorn
 xgboost
 scikit-learn
