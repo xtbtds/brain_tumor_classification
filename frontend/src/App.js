@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import './App.css';
+import Axios from "axios"
 
 function App() {
   const [selectedImage, setSelectedImage] = useState(null);
   const [predictionField, setPredictionField] = useState({})
 
   const handleSelectImage = (e) => {
-    // ___________________Ensure that only images are selected_________________
     const file = e.target.files[0];
     if (file.type.split('/')[0] === 'image') {
       setSelectedImage(file);
-    } else {
-        alert("Only images are accepted.")
     }
+    // } else {
+    //     alert("Only images are accepted.")
+    // }
   }
 
   const handleUploadImage = async () => {
@@ -22,6 +23,7 @@ function App() {
     }
     const formData = new FormData();
     formData.append('file', selectedImage);
+
     try {
       const res = await fetch('/api/upload', {
         method: 'POST',
@@ -33,9 +35,34 @@ function App() {
         ...data.result
       }));
     } catch (err) {
-      console.error(err);
+      console.log(err.data);
     }
-  }
+
+}
+
+
+// try {
+//   await Axios({
+//     method: 'post',
+//     url: '/api/upload',
+//     data: formData
+//   })
+//   .then((response) => {
+//     const data = response.json();
+//     if (data.result) {
+//       setPredictionField(predictionField => ({
+//         ...predictionField,
+//         ...data.result
+//       }));
+//     } else {
+//       console.log(data)
+//     }
+//   })
+// } catch (err) {
+//   console.log(err);
+// }
+
+
 
   return (
     <div className="App">

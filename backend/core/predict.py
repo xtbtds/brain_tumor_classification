@@ -1,33 +1,35 @@
+from typing import Dict
+
 import cv2
 import numpy as np
 import pandas as pd
+from core.utils.convert import convert_image_to_dataframe
 from tensorflow import keras
 from xgboost import XGBClassifier
 
 
-def predict(image):
-    # __________________CREATE AND LOAD MODELS_______________
-    model = XGBClassifier()
-    model.load_model("model_xgb.h5")
-    model2 = keras.models.load_model("model2.h5")
+def predict(image: bytes) -> Dict:
+    # load XGBoost model
+    model_xgb = XGBClassifier()
+    model_xgb.load_model("model_xgb.h5")
+
+    # load CNN model
+    model_cnn = keras.models.load_model("model2.h5")
+
+    # Get the output of GlobalAveragePooling layer
     new_model = keras.models.Model(
-        model2.input, model2.get_layer("global_average_pooling2d").output
+        model_cnn.input, model_cnn.get_layer("global_average_pooling2d").output
     )
 
-    # _________________CONVERT TO DATAFRAME AND MAKE PREDICTIONS________________
-    decoded = cv2.imdecode(np.frombuffer(image, np.uint8), -1)
-    img_array = cv2.resize(decoded, (224, 224))
-    data = pd.DataFrame({"image": [img_array], "label": [0]})
-    df = pd.DataFrame()
-    df = pd.concat([df, data])
+    # convert image to dataframe
+    df = convert_image_to_dataframe(image)
+
+    # make predictions
     test_x = np.array(df.image.to_list())
     X_test_features = new_model.predict(test_x)
-    y_pred = model.predict_proba(X_test_features)
+    y_pred = model_xgb.predict_proba(X_test_features)
     labels = ["glioma_tumor", "no_tumor", "meningioma_tumor", "pituitary_tumor"]
     result = {
-        labels[0]: round(float(y_pred[0][0]) * 100, 2),
-        labels[1]: round(float(y_pred[0][1]) * 100, 2),
-        labels[2]: round(float(y_pred[0][2]) * 100, 2),
-        labels[3]: round(float(y_pred[0][3]) * 100, 2),
+        labels[i]: round(float(y_pred[0][i]) * 100, 2) for i in range(len(labels))
     }
     return result
